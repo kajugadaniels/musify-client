@@ -52,5 +52,5 @@ export default async function TrackListFetcher() {
         }),
     );
 
-    return <TrackList tracks={songsWithThumbnails} />;
+    return <TrackList />;
 }
