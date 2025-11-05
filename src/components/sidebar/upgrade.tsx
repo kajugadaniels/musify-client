@@ -7,9 +7,9 @@ export default function Upgrade() {
     const upgrade = async () => {
         await authClient.checkout({
             products: [
-                "a209b547-608c-44e7-9178-4976a73c7135",
-                "11bce5cb-bfda-4c8f-afcc-4a512e2d7361",
-                "7ddf3794-111c-45ba-bd4c-36935d8ed81b",
+                "2ffa7352-f569-4caa-b3e4-3b770a91b4c6",
+                "b1f36181-b54d-4004-a503-d6167d52b447",
+                "1b711111-d5e8-4639-ae64-96036a966dbd",
             ],
         });
     };
