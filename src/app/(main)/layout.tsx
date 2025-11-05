@@ -2,6 +2,9 @@ import "~/styles/globals.css";
 
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Providers } from "~/components/providers";
+import { Toaster } from "~/components/ui/sonner";
+import { SidebarProvider } from "~/components/ui/sidebar";
 
 export const metadata: Metadata = {
     title: "Musify",
@@ -19,7 +22,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className={`${geist.variable}`}>
-            <body>{children}</body>
+            <body>
+                <Providers>
+                    <SidebarProvider></SidebarProvider>
+                    <Toaster />
+                    {children}
+                </Providers>
+            </body>
         </html>
     );
 }
