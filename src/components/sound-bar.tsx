@@ -117,7 +117,7 @@ export default function SoundBar() {
                 <div className="space-y-2 p-3">
                     <div className="flex items-center justify-between">
                         <div className="flex min-w-0 flex-1 items-center gap-2">
-                            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-purple-500 to-pink-500">
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-linear-to-br from-purple-500 to-pink-500">
                                 {track?.artwork ? (
                                     <img
                                         className="h-full w-full rounded-md object-cover"
