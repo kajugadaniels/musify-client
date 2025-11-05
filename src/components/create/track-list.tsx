@@ -118,7 +118,7 @@ export function TrackList({ tracks }: { tracks: Track[] }) {
                                             key={track.id}
                                             className="flex cursor-not-allowed items-center gap-4 rounded-lg p-3"
                                         >
-                                            <div className="bg-destructive/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md">
+                                            <div className="bg-destructive/10 flex h-12 w-12 shrink-0 items-center justify-center rounded-md">
                                                 <XCircle className="text-destructive h-6 w-6" />
                                             </div>
                                             <div className="min-w-0 flex-1">
@@ -138,7 +138,7 @@ export function TrackList({ tracks }: { tracks: Track[] }) {
                                             key={track.id}
                                             className="flex cursor-not-allowed items-center gap-4 rounded-lg p-3"
                                         >
-                                            <div className="bg-destructive/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md">
+                                            <div className="bg-destructive/10 flex h-12 w-12 shrink-0 items-center justify-center rounded-md">
                                                 <XCircle className="text-destructive h-6 w-6" />
                                             </div>
                                             <div className="min-w-0 flex-1">
@@ -159,7 +159,7 @@ export function TrackList({ tracks }: { tracks: Track[] }) {
                                             key={track.id}
                                             className="flex cursor-not-allowed items-center gap-4 rounded-lg p-3"
                                         >
-                                            <div className="bg-muted flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md">
+                                            <div className="bg-muted flex h-12 w-12 shrink-0 items-center justify-center rounded-md">
                                                 <Loader2 className="text-muted-foreground h-6 w-6 animate-spin" />
                                             </div>
                                             <div className="min-w-0 flex-1">
@@ -181,7 +181,7 @@ export function TrackList({ tracks }: { tracks: Track[] }) {
                                             onClick={() => handleTrackSelect(track)}
                                         >
                                             {/* Thumbnail */}
-                                            <div className="group relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-md">
+                                            <div className="group relative h-12 w-12 shrink-0 overflow-hidden rounded-md">
                                                 {track.thumbnailUrl ? (
                                                     <img
                                                         className="h-full w-full object-cover"
