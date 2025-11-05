@@ -12,9 +12,9 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "../ui/sidebar";
-import { Credits } from "./credits";
-import SidebarMenuItems from "./sidebar-menu-items";
 import { User } from "lucide-react";
+import SidebarMenuItems from "./sidebar-menu-items";
+import { Credits } from "./credits";
 import Upgrade from "./upgrade";
 
 export async function AppSidebar() {
