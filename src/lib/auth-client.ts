@@ -1,4 +1,3 @@
-import { toNextJsHandler } from "better-auth/next-js";
-import { auth } from "~/lib/auth";
-
-export const { POST, GET } = toNextJsHandler(auth);
+import { polarClient } from "@polar-sh/better-auth";
+import { createAuthClient } from "better-auth/react";
+export const authClient = createAuthClient({ plugins: [polarClient()] });
